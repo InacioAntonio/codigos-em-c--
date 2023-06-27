@@ -31,7 +31,7 @@
 
 #include <iostream>
 using namespace std;
-char  media1(float p1 , float p2 , float p3, int faltas , int qtdaulas , float* media );
+char  media1(float p1 , float p2 , float p3, int faltas , int qtdaulas , float *media );
 
 int main(){
     float nota1,nota2,nota3,mediaf;
@@ -71,10 +71,10 @@ char media1(float p1,float p2,float p3, int faltas , int qtdaulas, float *media)
         float mediafinal=(p1+p2+p3)/3;
         *media=mediafinal;
         float porcento=(qtdaulas)*(0.25);
-    if((mediafinal>=6 ) && (faltas<porcento)){
+    if((*media>=6 ) && (faltas<porcento)){
         return 'a';
     }else{
-        if(mediafinal<6 && (faltas<porcento)){
+        if(*media<6 && (faltas<porcento)){
             return 'r';
         }else{
             if(faltas>porcento){
