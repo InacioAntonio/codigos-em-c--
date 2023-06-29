@@ -8,18 +8,15 @@ using namespace std ;
 void hm(int mnts,int *h,int *m);
 
 int main(){
-    int mnts,h,m,hm1;
+    int mnts,h,m;
    cout << "Digite os minutos que serao convetidos para hora e minutos"<<endl;
     cin >> mnts;
     hm(mnts,&h,&m);
    
 }
 void hm(int mnts,int *h,int *m){
-    *m=mnts/60;
-    if(*m>60){
-        *m=*m/60;
-    }
-    *h=mnts-(*m/60);
+    *h=mnts/60;
+    *m=mnts-(*h*60);
     cout <<*h <<" H "<<*m<<" min"<<endl;
 
 };

@@ -74,7 +74,7 @@ int main(){
     cout << "5- CALCULAR"<<endl;
     cout << "6- SAIR   "<<endl;
     cin >> escolha;
-    switch (escolha ){
+        switch (escolha ){
         case 1:
         cout << "Digite a ordem  que voce quer "<<endl;
             cin >> ordem;
@@ -155,12 +155,7 @@ int main(){
         default:
         cout << "Comando invalido"<<endl;
         break;
-
-        
-        
-
-
-    }
+        }
 
     }while(escolha!=6);
     return 0;
